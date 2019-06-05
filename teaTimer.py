@@ -1,4 +1,6 @@
 #Timer
+
+#Imports
 import math
 import time
 import sys
@@ -20,31 +22,38 @@ elif teaType == "chai":
     steep = x * 4.68
     pass
 
+def visibleCounter(sec):
+    for i in range(int(sec),0,-1):
+        print(i)
+        time.sleep(1)
+    return i
+
 #Output to screen:
 print('\n')
-minutes = int((AftBoil-(AftBoil%x))/x)
-seconds = int(AftBoil%x)
-print(math.ceil(seconds))
 print("Boiling! Current time is " + time.ctime() + ".")
 print('\n')
-for i in range(minutes,0,-1):
-    for j in range(seconds,0,-1):
-        print(time.time(), time.clock())
-        sys.stdout.write(str(i)+' ')
-        sys.stdout.flush()
-        sys.stdout.write(str(j)+' ')
-        sys.stdout.flush()
-        time.sleep(1)
-        #print(i)
-        #print(j)
-        
+
+visibleCounter(AftBoil)
 
 print("Time to steep! Current time is " + time.ctime() + ".")
 print('\n')
-for i in range(minutes,0,-1):
-    for j in range(seconds,0,-1):
-        time.sleep(1)
-#time.sleep(steep)
+
+visibleCounter(steep)
 
 print("Done steeping. Squeeze the bag with the wrapper and throw them away.  Current time is " + time.ctime() + ".")
 print('\n')
+
+#Notes:
+#minutes = int((AftBoil-(AftBoil%x))/x)
+#seconds = int(AftBoil%x)
+#print(math.ceil(seconds))
+
+    #for j in range(60,0,-1):
+        #print(time.time(), time.clock())
+        #sys.stdout.write(str(i)+' ')
+        #sys.stdout.flush()
+        #sys.stdout.write(str(j)+' ')
+        #sys.stdout.flush()
+        #time.sleep(1)
+        #print(i, flush=True)
+        #print(j, flush=True)
