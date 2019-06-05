@@ -29,9 +29,15 @@ print("Boiling! Current time is " + time.ctime() + ".")
 print('\n')
 for i in range(minutes,0,-1):
     for j in range(seconds,0,-1):
+        print(time.time(), time.clock())
+        sys.stdout.write(str(i)+' ')
+        sys.stdout.flush()
+        sys.stdout.write(str(j)+' ')
+        sys.stdout.flush()
         time.sleep(1)
-        print(i)
-        print(j)
+        #print(i)
+        #print(j)
+        
 
 print("Time to steep! Current time is " + time.ctime() + ".")
 print('\n')
