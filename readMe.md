@@ -9,4 +9,4 @@ Next is the proper steeping duration.  Each tea is different.
 
 I currently have a seconds count down timer function installed.  I would like to change that to a minutes and seconds counter.
 
-The after boil time and the steeping times change depending on the source.  I was surprised to find that the time currently set for green tea seems to offer a good cup of tea.  I would like to add web scrapping to search out times for each tea and average those times offering times for optimum tea.
+The after boil time and the steeping times change depending on the source.  I was surprised to find that the time currently set for green tea seems to offer a good cup of tea.  I would like to add web scrapping to search out times for each tea.  I will then average those times to calculate times for the optimum tea.  The optimum times will then be automatically added to the program.
